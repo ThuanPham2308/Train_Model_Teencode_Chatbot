@@ -1,0 +1,21 @@
+# Cài: pip install -r requirements.txt
+# (Trên Kaggle GPU, KHÔNG cài đè torch — torch đã có sẵn đúng bản CUDA của máy ảo.)
+
+python-dotenv>=1.0.0
+numpy
+pandas
+scikit-learn
+openpyxl
+
+# PhoBERT / ViSoBERT (BERT token-classification)
+torch
+transformers
+datasets
+accelerate
+seqeval
+evaluate
+underthesea        # word segmentation (PhoBERT + FastText)
+sentencepiece       # tokenizer của ViSoBERT (kiến trúc XLM-R)
+
+# FastText
+fasttext-wheel==0.9.2

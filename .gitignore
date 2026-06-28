@@ -1,0 +1,29 @@
+# Secrets / local config — KHÔNG push lên Git
+.env
+
+# Dữ liệu & model lớn (tải/sinh lại được, không nên nằm trong repo Git)
+*.xlsx
+!*.example.xlsx
+models/
+outputs/
+*.bin
+*.vec
+train_output/
+train.txt
+valid.txt
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
